@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+
+/* HEADER */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #8a8383;
+  color: #fff;
+}
+
+.header-logo {
+  margin-right: 50px;
+  padding: 25px 50px;
+}
+
+.header-menu-list {
+  flex-basis: 100%;
+
+}
+
+.header-menu-item {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.header-menu-item:last-child {
+  margin-right: 0;
+}
+
+.header-phone {
+  flex-shrink: 0;
+  margin-right: 50px;
+}
+
+.phone-icon,
+.header-phone-link {
+  display: inline-block;
+  text-align: start;
+  vertical-align: middle;
+}
+
+.button {
+  min-width: 300px;
+  padding: 35px 50px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #5C8EE5;
+  color: #fff;
+  line-height: 160%;
+  border: none;
+}
+
+.header-button {}
