@@ -1,2 +1,2 @@
-# html-starter
-стартовый шаблон для верстки
+# Alliance Production
+учебный макет
