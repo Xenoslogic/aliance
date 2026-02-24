@@ -18,18 +18,50 @@ a {
   font-size: inherit;
 }
 
+@font-face {
+  font-family: 'BebasNeue400';
+  src: url('../fonts/BebasNeue400.ttf') format('truetype');
+}
 
-/* HEADER */
+
+/* HEADER NAV-BAR */
+.header {
+  min-height: 100vh;
+}
+
+.header-bg {
+  position: relative;
+  background-image: url('../images/header-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.header-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #292D33;
+  opacity: 0.6;
+  z-index: 0;
+}
+
 .navbar {
   display: flex;
+  margin-bottom: 150px;
+  position: relative;
   align-items: center;
-  background-color: #8a8383;
   color: #fff;
+  z-index: 1;
+  border-bottom: 1px solid rgba(235, 235, 240, 0.2);
 }
 
 .header-logo {
   margin-right: 50px;
   padding: 25px 50px;
+  border-right: 1px solid rgba(235, 235, 240, 0.2);
 }
 
 .header-menu-list {
@@ -67,6 +99,75 @@ a {
   color: #fff;
   line-height: 160%;
   border: none;
+  cursor: pointer;
 }
 
-.header-button {}
+.navbar-button {}
+
+
+/* CONTAINER HEADER-CONTENT */
+.container {
+  max-width: 1450px;
+  padding: 0 5px;
+  margin: 0 auto;
+
+}
+
+.separate-line {
+  width: 150px;
+  height: 2px;
+  background-color: #5C8EE5;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.header-title {
+  font-family: BebasNeue400, sans-serif;
+  max-width: 1080px;
+  font-size: 80px;
+  line-height: 120%;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.header-text {
+  max-width: 720px;
+  width: 100%;
+  line-height: 160%;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.header-content-btn {
+  padding: 25px 60px;
+  min-width: 313px;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+
+/* HEADER FEATURES */
+.header-features {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-features-item {
+  max-width: 285px;
+  padding: 30px 50px;
+  border: 1px solid rgba(235, 235, 240, 0.2);
+}
+
+.header-features-item:not(:last-child) {
+  border-right: none;
+}
+
+.header-features-text {
+  line-height: 160%;
+}
