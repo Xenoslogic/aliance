@@ -5,9 +5,11 @@
 body {
   font-family: "Noto Sans", sans-serif;
   font-size: 16px;
+  line-height: 160%;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
   padding: 0;
 }
@@ -16,6 +18,10 @@ a {
   text-decoration: none;
   color: inherit;
   font-size: inherit;
+}
+
+.visualy-hidden {
+  display: none;
 }
 
 @font-face {
@@ -27,6 +33,8 @@ a {
 /* HEADER NAV-BAR */
 .header {
   min-height: 100vh;
+  margin-bottom: 150px;
+  padding-top: 94px;
 }
 
 .header-bg {
@@ -50,12 +58,21 @@ a {
 
 .navbar {
   display: flex;
+  width: 100%;
+  left: 0;
+  top: 0;
   margin-bottom: 150px;
-  position: relative;
+  position: fixed;
   align-items: center;
   color: #fff;
-  z-index: 1;
+  z-index: 2;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+  transition: background-color .4s;
+}
+
+.navbar-light {
+  background-color: #fff;
+  color: #292D33;
 }
 
 .header-logo {
@@ -170,4 +187,71 @@ a {
 
 .header-features-text {
   line-height: 160%;
+}
+
+/* SECTION WORK-SCHEME */
+.work-scheme_title {
+  font-family: BebasNeue400, sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #292D33;
+  margin-bottom: 50px;
+}
+
+.steps-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.steps-item {
+  max-width: 330px;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  font-family: BebasNeue400, sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  color: #5C8EE5;
+}
+
+.step-number::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  margin-left: 30px;
+  background: #ebebf0;
+}
+
+.step-title {
+  margin: 30px 0 10px 0;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 160%;
+
+}
+
+.step-info {
+  margin: 10px 0 20px 0;
+  color: #828A99;
+}
+
+.step-link {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #5C8EE5;
+}
+
+.step-link::before {
+  content: "";
+  height: 1px;
+  width: 40px;
+  margin-right: 20px;
+  background: #5C8EE5;
 }
