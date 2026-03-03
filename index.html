@@ -15,10 +15,15 @@
 
 <body>
   <nav class="navbar">
-    <a href="./index.html" class="header-logo logo-light"><img src="./images/logo-light.svg"
-        alt="логотип в светлом тоне"></a>
-    <a href="./index.html" class="header-logo logo-dark visualy-hidden"><img src="./images/logo-dark.svg"
-        alt="логотип в темном тоне"></a>
+    <a href="./index.html" class="header-logo logo-light">
+      <svg class="logo-svg" width="140" height="44">
+        <use href="./images/sprite.svg#logo-light"></use>
+      </svg>
+    </a>
+    <a href="./index.html" class="header-logo logo-dark visualy-hidden">
+      <svg class="logo-svg" width="140" height="44">
+        <use href="./images/sprite.svg#logo-dark"></use>
+      </svg></a>
     <ul class="header-menu-list">
       <li class="header-menu-item"><a href="#" class="header-menu-link">О компании</a></li>
       <li class="header-menu-item"><a href="#" class="header-menu-link">Контрактное производство</a></li>
@@ -27,13 +32,14 @@
       <li class="header-menu-item"><a href="#" class="header-menu-link">Контакты</a></li>
     </ul>
     <div class="header-phone">
-      <img src="./images/phone-icon.svg" alt="иконка телефона" class="phone-icon">
+      <svg class="phone-icon" width="34" height="24">
+        <use href="./images/sprite.svg#phone-icon"></use>
+      </svg>
       <a href="tel:+74996861014" class="header-phone-link">+7 (499) 686-10-14</a>
     </div>
     <button class="button navbar-button">Получить консультацию</button>
   </nav>
   <header class="header header-bg">
-
     <div class="container">
       <div class="header-content">
         <div class="separate-line"></div>
@@ -45,23 +51,33 @@
       </div>
       <ul class="header-features">
         <li class="header-features-item">
-          <img src="./images/features-icons/feature-1.svg" alt="иконка преимущества" class="header-features-icon">
+          <svg class="header-features-icon" width="36" height="36">
+            <use href="./images/features-icons/features.svg#feature-1"></use>
+          </svg>
           <p class="header-features-text">Непрерывная работа c 2017 года</p>
         </li>
         <li class="header-features-item">
-          <img src="./images/features-icons/feature-2.svg" alt="иконка преимущества" class="header-features-icon">
+          <svg class="header-features-icon" width="36" height="36">
+            <use href="./images/features-icons/features.svg#feature-2"></use>
+          </svg>
           <p class="header-features-text">Вся продукция сертифицирована</p>
         </li>
         <li class="header-features-item">
-          <img src="./images/features-icons/feature-3.svg" alt="иконка преимущества" class="header-features-icon">
+          <svg class="header-features-icon" width="36" height="36">
+            <use href="./images/features-icons/features.svg#feature-3"></use>
+          </svg>
           <p class="header-features-text">Контроль качества на всех этапах</p>
         </li>
         <li class="header-features-item">
-          <img src="./images/features-icons/feature-4.svg" alt="иконка преимущества" class="header-features-icon">
+          <svg class="header-features-icon" width="36" height="36">
+            <use href="./images/features-icons/features.svg#feature-4"></use>
+          </svg>
           <p class="header-features-text">Возможны поставки по всей России</p>
         </li>
         <li class="header-features-item">
-          <img src="./images/features-icons/feature-5.svg" alt="иконка преимущества" class="header-features-icon">
+          <svg class="header-features-icon" width="36" height="36">
+            <use href="./images/features-icons/features.svg#feature-5"></use>
+          </svg>
           <p class="header-features-text">Оперативное производство</p>
         </li>
       </ul>
