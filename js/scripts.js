@@ -1,6 +1,8 @@
 let navbar = document.querySelector('.navbar');
 let logoLight = document.querySelector('.logo-light');
 let logoDark = document.querySelector('.logo-dark');
+let mMenuToggle = document.querySelector('.mobile-menu-toggle');
+let menu = document.querySelector('.mobile-menu');
 
 window.addEventListener('scroll', () => {
   if (this.scrollY > 1) {
@@ -12,4 +14,9 @@ window.addEventListener('scroll', () => {
     logoLight.classList.remove('visualy-hidden');
     logoDark.classList.add('visualy-hidden');
   }
+})
+
+mMenuToggle.addEventListener('click', (event) => {
+  event.preventDefault();
+  menu.classList.toggle('is-open')
 })

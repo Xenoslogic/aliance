@@ -1,0 +1,185 @@
+@media screen and (max-width: 1720px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1610px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1510px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  html {
+    font-size: 12px;
+  }
+
+  .header-logo {
+    padding: 2rem;
+    margin-right: 2rem;
+  }
+
+  .logo-svg {
+    max-width: 6rem;
+  }
+
+  .header-menu-item {
+    margin-right: 2.5rem;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 70rem;
+  }
+
+  .header-phone {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .container {
+    max-width: 60rem;
+  }
+
+}
+
+@media screen and (max-width: 1020px) {
+  .header-menu-list {
+    display: none;
+  }
+
+  .header-logo {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 80px;
+    height: 100%;
+    padding: 1.8rem;
+    border-right: 1px solid rgba(235, 235, 240, 0.2);
+  }
+
+  .mobile-menu-line {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+
+  }
+
+  .navbar-light .mobile-menu-line {
+    background-color: #000;
+  }
+
+  .mobile-menu-line:nth-child(2) {
+    width: 75%;
+    align-self: start;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    color: #000;
+    z-index: 2;
+    background-color: #fff;
+    padding-top: 3.5rem;
+    padding-left: 1.5rem;
+    padding-right: 0.9rem;
+  }
+
+  .mobile-menu.is-open {
+    display: block;
+  }
+
+  .mobile-menu-nav-item {
+    margin-bottom: 1.875rem;
+  }
+
+  .mobile-menu-nav-link {
+    font-weight: 700;
+    font-size: .875rem;
+    line-height: 160%;
+    color: #292D33;
+  }
+
+  .mobile-sub-menu {
+    padding-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  .mobile-sub-menu-link {
+    font-size: .875rem;
+    line-height: 160%;
+    color: #828282;
+  }
+
+  .mobile-phone {
+    display: block;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 160%;
+    text-decoration: underline;
+    color: #292D33;
+    border-top: 1px solid #ebebf0;
+    padding-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .mobile-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .mobile-info .phone-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .mobile-info-address,
+  .mobile-info-email {
+    text-decoration: none;
+    font-style: normal;
+    font-size: .875rem;
+    line-height: 160%;
+    color: #292D33;
+  }
+
+  .mobile-social-link {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  .navbar-button .btn-text {
+    display: none;
+  }
+
+  .navbar-button .btn-phone-icon {
+    display: block;
+    fill: #ffffff;
+  }
+}
