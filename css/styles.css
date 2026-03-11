@@ -198,7 +198,7 @@ a {
   z-index: 1;
   color: #fff;
   display: flex;
-  flex-wrap: wrap;
+
 }
 
 .slider-buttons {
@@ -212,10 +212,22 @@ a {
 
 .slider-button-prev,
 .slider-button-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   flex-basis: 50%;
-  text-align: center;
   border: 1px solid rgba(235, 235, 240, 0.2);
+}
+
+.work-scheme-btns {
+  justify-content: end;
+}
+
+.work-scheme-btns .slider-button-prev,
+.work-scheme-btns .slider-button-next {
+  flex-basis: 60px;
+  background-color: #5C8EE5;
 }
 
 .header-features-item {
@@ -239,6 +251,10 @@ a {
 }
 
 /* SECTION WORK-SCHEME */
+.work-scheme {
+  margin-bottom: 200px;
+}
+
 .work-scheme-separator {
   margin-left: 9.0625rem;
 }
@@ -258,25 +274,12 @@ a {
 
 .steps-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 1.875rem;
   margin-left: 9.0625rem;
 }
 
 .steps-item {
   max-width: 18.75rem;
-}
-
-.step-item-2 {
-  padding-left: 1.75rem;
-}
-
-.step-item-3 {
-  padding-left: 3.6875rem;
-}
-
-.step-item-4 {
-  padding-left: 5.625rem;
 }
 
 .step-number {
